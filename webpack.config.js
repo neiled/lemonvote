@@ -37,7 +37,8 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlwebpackPlugin({
-      title: 'Lemon Vote'
+      title: 'Lemon Vote',
+      template: 'src/app/src/index.ejs'
     })
   ]
 };
