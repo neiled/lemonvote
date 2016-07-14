@@ -1,6 +1,9 @@
-var component = require('./components/boilerplate');
-var app = document.createElement('div');
+import React from 'react';  
+import App from './components/App.jsx';  
 
-document.body.appendChild(app);
-
-app.appendChild(component());  
+main();  
+function main() {  
+    const app = document.createElement('div');    
+    document.body.appendChild(app);    
+    React.render(<App />, app); 
+}
