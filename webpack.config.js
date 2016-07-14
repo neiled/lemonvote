@@ -32,7 +32,9 @@ module.exports = {
     historyApiFallback: true,
     hot: true,
     inline: true,
-    progress: true
+    progress: true,
+    host: process.env.IP || "localhost",
+    port: process.env.port || "8080"
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
