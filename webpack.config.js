@@ -36,6 +36,7 @@ module.exports = {
     host: process.env.IP || "localhost",
     port: process.env.port || "8080"
   },
+  devtool: 'source-map',  
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlwebpackPlugin({
