@@ -17,9 +17,14 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.jsx?$/,
-      exclude: /node_modules/,
-      loaders: ['react-hot', 'babel'],
+      test:   /\.jsx?$/,
+      exclude:/node_modules/,
+      loaders:['react-hot', 'babel'],
+    },
+    {
+      test:   /\.css$/,
+//      loader: "style-loader!css-loader!postcss-loader"
+        loaders: ['style-loader','css-loader','postcss-loader'],
     }]
   },
   output: {
