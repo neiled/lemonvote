@@ -1,6 +1,10 @@
 import React from 'react';  
 export default class Todo extends React.Component {  
     render() {    
-         return <div>Build my boilerplate</div>;   
+         return (
+         <div className="jumbotron">
+            <h1>Welcome to Lemon Vote</h1>
+         </div>
+         );   
     }
 }
